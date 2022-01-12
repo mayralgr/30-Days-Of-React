@@ -31,7 +31,7 @@ const lengthOfArr = arrWithMoreThan5.length;
 // Get the first item, the middle item and the last item of the array
 const firstItem = arrWithMoreThan5[0];
 const middleItem = arrWithMoreThan5[lengthOfArr / 2 - 1];
-const middleItem = arrWithMoreThan5[lengthOfArr - 1];
+const lastItem = arrWithMoreThan5[lengthOfArr - 1];
 // Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
 const mixedDataTypes = ["Hey", 3, 6.4, "A", { other: "something" }, [6, 7, 6]];
 const mixedLength = mixedDataTypes.length;
@@ -62,7 +62,7 @@ itCompanies.forEach((c) => console.log(c.toUpperCase())); // map and then foreac
 // Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 console.log(itCompanies.join(",") + " are big IT companies.");
 // Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
-itCompanies.indexOf("Oracle") !== -1
+itCompanies.indexOf("some") !== -1
   ? console.log("Oracle")
   : console.log("Company not found");
 // Filter out companies which have more than one 'o' without the filter method
@@ -88,3 +88,4 @@ const middleRemoved = itCompanies.splice(itCompanies.length / 2 - 1, 1);
 const lastRemoved = itCompanies.pop();
 // 23
 itCompanies.splice();
+console.log(itCompanies);
